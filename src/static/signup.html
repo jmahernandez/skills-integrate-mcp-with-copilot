@@ -3,26 +3,30 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mergington High School Login</title>
+    <title>Sign Up - Mergington High</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header>
       <h1>Mergington High School</h1>
-      <h2>Student Login</h2>
+      <h2>Create a Student Account</h2>
     </header>
 
     <main>
-      <section id="login-container">
-        <h3>Sign in to your account</h3>
-        <form id="login-form">
+      <section id="signup-container">
+        <h3>Register a new account</h3>
+        <form id="signup-form">
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" required placeholder="Your full name" />
+          </div>
           <div class="form-group">
             <label for="email">Email</label>
             <input type="email" id="email" name="email" required placeholder="your-email@mergington.edu" />
           </div>
           <div class="form-group">
             <label for="password">Password</label>
-            <input type="password" id="password" name="password" required placeholder="Enter your password" />
+            <input type="password" id="password" name="password" required placeholder="Choose a password" />
           </div>
           <div class="form-group">
             <label for="branch">Branch</label>
@@ -39,11 +43,11 @@
               <option value="EVD">EVD</option>
             </select>
           </div>
-          <button type="submit">Login</button>
+          <button type="submit">Sign Up</button>
         </form>
 
         <p class="small-text">
-          Don’t have an account? <a href="signup.html">Create one</a>
+          Already have an account? <a href="index.html">Login here</a>
         </p>
 
         <div id="message" class="hidden"></div>
